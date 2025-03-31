@@ -1,0 +1,63 @@
+/* Make sidebar and main content appear side-by-side */
+.app-container {
+    display: flex;
+    height: 100vh;
+  }
+  
+  /* Sidebar styling */
+  .sidebar {
+    width: 220px;
+    height: 100vh;
+    background: #f4f4f4;
+    padding: 20px;
+  }
+  
+  /* Main content takes remaining width */
+  .main-content {
+    flex-grow: 1;
+    padding: 20px;
+  }
+  
+  /* Style the table */
+  .portfolio-table {
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  .portfolio-table table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+  }
+  
+  .portfolio-table th, .portfolio-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+  }
+  
+  /* Upload Document Form */
+  .upload-document {
+    background: white;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  .upload-document form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .upload-document button {
+    margin-top: 15px;
+    background: blue;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+  }
+  
