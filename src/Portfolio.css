@@ -1,0 +1,221 @@
+/* Portfolio Container */
+.portfolio-container {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  overflow: auto; /* Allows scrolling if content overflows */
+}
+
+/* Toolbar Buttons */
+.toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 15px;
+  font-size: bold;
+}
+
+/* Default Gray Buttons */
+.toolbar .filter-btn {
+  padding: 8px 12px;
+  border: none;
+  background-color: #ccc; /* Default gray color */
+  color: black;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+/* Default Blue Color for 'All' Button */
+.toolbar .filter-btn.all-btn {
+  background-color: #007bff;
+  color: white;
+}
+
+/* Hover Effect: Turns Blue */
+.toolbar .filter-btn:hover {
+  background-color: #007bff;
+  color: white;
+}
+
+.actions-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px; /* Adds space between the first and second row */
+}
+
+.actions-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Spread elements across */
+  margin-top: 10px;
+  flex-wrap: wrap; /* Allows wrapping when space is tight */
+}
+
+.actions-row button {
+  margin-right: 10px; /* Space between Generate and Declare buttons */
+}
+
+.right-actions {
+  margin-left: auto; /* Pushes elements to the right */
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Adjust spacing between elements */
+  flex-wrap: wrap; /* Allows wrapping if needed */
+}
+
+.actions-row button:hover {
+  background-color: #a8c1dc;
+}
+
+
+.search-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.search-section .left-group {
+  display: flex;
+  gap: 10px;
+}
+
+.search-section .right-group {
+  margin-left: auto; 
+  display: flex;
+  gap: 10px;
+}
+
+.search-section .small-search {
+  width: 150px;
+  padding: 5px;
+}
+
+.search-section .dropdown {
+  padding: 5px;
+}
+
+.search-section .filter-btn {
+  padding: 8px 12px;
+  background-color: #accaea;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  min-width: 120px; /* Prevents buttons from being too small */
+}
+
+.search-section .filter-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Loan Table */
+.loan-table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.loan-table th, .loan-table td {
+  padding: 8px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+.loan-table th {
+  background-color: #f4f4f4;
+}
+
+/* Pagination */
+.pagination {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 10px;
+  flex-wrap: wrap; /* Allow wrapping if space is tight */
+}
+
+.pagination .right-btn,
+.pagination .left-btn {
+  padding: 8px 12px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 10px; /* Space between buttons */
+  min-width: 100px; 
+}
+
+.pagination .right-btn:hover,
+.pagination .left-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Upload Section */
+.upload-section {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.upload-section label {
+  font-weight: bold;
+}
+
+.upload-section input,
+.upload-section select {
+  padding: 5px;
+  width: 200px;
+}
+
+.upload-section button {
+  padding: 3px 6px; /* ⬅ Reduced padding */
+  background-color: #ff5733;
+  color: white;
+  border: none;
+  border-radius: 3px; /* ⬅ Smaller radius */
+  cursor: pointer;
+  font-size: 20px; /* ⬅ Smaller text */
+  width: 200px; /* ⬅ Set fixed width */
+}
+
+.upload-section button:hover {
+  background-color: #32a9e9;
+}
+
+/* Screenshot Preview */
+.screenshot-preview {
+  margin-top: 10px;
+}
+
+.screenshot-preview img {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 200px;
+}
+
+/* Main Content (so it doesn't overlap sidebar) */
+.main-content {
+  margin-left: 260px; /* Adjust according to sidebar width */
+  padding: 20px;
+}
+
+/* Loan Table Styling */
+#loan-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+#loan-table th,
+#loan-table td {
+  padding: 10px;
+  border: 1px solid #ddd;
+  text-align: left;
+  white-space: nowrap; /* Prevent text from wrapping */
+}
+
+#loan-table th {
+  background-color: #f4f4f4;
+  font-weight: bold;
+}
